@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Biblioteca</h1>
+	<div id="app">
+		<form id="add-book-form">
+			<label for="title">Titlu:</label>
+			<input type="text" id="title" name="title">
+			<label for="author">Autor:</label>
+			<input type="text" id="author" name="author">
+			<button type="submit">Adaugă carte</button>
+		</form>
+		<form id="search-form">
+			<label for="query">Caută:</label>
+			<input type="text" id="query" name="query" placeholder="Exemplu: title JavaScript">
+			<button type="submit">Caută</button>
+		</form>
+		<div id="books-list">
+			<h2>Listă cărți</h2>
+			<ul id="book-items"></ul>
+		</div>
+		<div id="search-results-list">
+			<h2>Rezultate căutare</h2>
+			<ul id="search-results"></ul>
+			<button id="clear-search-results">Șterge căutările</button>
+		</div>
+	</div>	
+    <script src="app.js"></script>
+</body>
+</html>
